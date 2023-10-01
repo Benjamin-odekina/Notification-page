@@ -1,0 +1,141 @@
+/* font face section */
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf) format(ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(../assets/fonts/static/PlusJakartaSans-Medium.ttf) format(ttf);
+    font-weight: Medium;
+    font-style: normal;
+}
+/* end of font face */
+
+html {
+    background-color: hsl(210, 60%, 98%);
+    font-size: 16px;
+    font-family: Plus Jakarta Sans, sans-serif;
+}
+.container {
+    width: 375px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 940px){
+    .container {
+        min-width: 725px;
+        box-shadow: 5px 5px 10px  rgba(218, 215, 215, 0.329);
+        border-radius: 20px;
+    }
+}
+
+.notice-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bold {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.notice-top p .note {
+    background-color: rgb(9, 9, 71);
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+#faint { 
+    font-size: 14px;
+    cursor: pointer;
+}
+#faint:hover {color: rgb(58, 58, 201);}
+.box1 {
+    display: flex;
+    align-items: center;
+    background-color: hsla(211, 68%, 94%, 0.767);
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.box1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.box2 {
+    display: flex;
+    align-items:flex-start;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.box2 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.text p:nth-child(2) {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsla(211, 68%, 94%);
+    
+}
+.text p:nth-child(2):hover,
+.text p:nth-child(2):target {
+    background-color:  hsl(205, 33%, 90%); 
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+.box3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.box3 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.box3 .kim img:hover { 
+    cursor: pointer;
+    box-shadow: 2px 3px 2px rgba(107, 237, 247, 0.452);
+}
+@media screen and (min-width: 940px){
+    .box3 .kim{
+        justify-content: space-between;
+    }
+}
+
+/*attribute section note neccesary*/
+.attribution {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
+.attribution a {
+    color: #000;
+}
+#name { font-weight: 700; font-size: 16px;}
+#name a:hover,
+#click a:hover {
+    color: rgb(22, 22, 119);
+}
+#name a { color: black; text-decoration: none;}
+#click a { color: black; text-decoration: none; font-size: 14px;}
+#fade {color: rgba(0, 0, 0, 0.438);}
