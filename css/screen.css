@@ -1,0 +1,155 @@
+
+@keyframes Dropanimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+html{
+    background-color: #e3e3e3;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.container-page{
+    max-width: 375px;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 940px) {
+    .container-page{
+        max-width: 767px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #00000027;
+    }
+}
+ /* start of page animation*/
+.box .notify-box {
+    opacity: 0;
+    animation: Dropanimation 1.5s forwards}
+.box :first-child {
+    animation-delay: .05s;
+}
+.box :nth-child(2) {
+    animation-delay: .5s;
+}
+.box :nth-child(3) {
+    animation-delay: 1s;
+}
+.box :nth-child(4) {
+    animation-delay: 1.5s;
+}
+.box :nth-child(5) {
+    animation-delay: 2s;
+}
+.box :nth-child(6) {
+    animation-delay: 2.5s;
+}
+.box :nth-child(7) {
+    animation-delay: 3s;
+}
+/* end of page animation*/
+.h-n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-r {
+    font-size: 18px;
+    font-weight: 700;
+}
+.m-r .notify-count{
+    padding: 0 8px;
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.mar {
+    font-size: 14px;
+    color: rgb(21, 21, 74);
+    cursor: pointer;
+}
+.mar:hover,
+.box p a:hover {color: rgb(4, 4, 184);}
+.box {
+    font-size: 14px;
+}
+
+.notify-box {
+    display: flex;
+    align-items: center;
+    background-color: hsla(211, 68%, 94%, 0.438);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image img {
+    width: 40px;
+    padding: 10px;
+}
+.text a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.red-dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: 10px;
+}
+#name {
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#name:hover {
+    color: rgb(1, 1, 89);
+}
+#time {
+    color: #00000078;
+}
+.read-message {
+    align-items: normal;
+    background-color: #fff;
+}
+#message{
+    border: 1.2px solid rgb(133, 133, 179);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#message:hover {
+    background-color:  hsl(205, 33%, 90%);
+    border: none;
+}
+.kim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#chess-image{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#chess-image:hover {
+    box-shadow: 0 0 5px rgb(120, 216, 243);
+}
